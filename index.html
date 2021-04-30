@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script
+         src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="gameConsole">
+
+        <div class="gameDifficulty">
+            <div id="_9x9" class="whichDifficulty" onclick="divShow9x9()"> <span>9 x 9</span></div>
+            <div id="_16x16" class="whichDifficulty" onclick="divShow16x16()"><span>16 x 16</span></div>
+            <div id="_25x25" class="whichDifficulty" onclick="divShow25x25()"><span>25 x 25</span></div>
+        </div>
+        <div class="startedMessage"><span>Please, select game difficult.</span></div>
+        
+        <div class="gamePlay">
+            <div class="gamePlayTop"><span id="counter">Time : 60</span></div>
+            <div class="gamePlayBottom">
+                <div class="gamePlayBottomLeft"><span id="temp">NEXT :</span></div>
+                <div class="gamePlayBottomRight"></div>
+            </div>
+            <div class="gamePlayColorPalette_9x9"></div>
+            <div class="gamePlayColorPalette_16x16"></div>
+            <div class="gamePlayColorPalette_25x25"></div>
+        </div>
+
+        <div class="finishGameScreen">
+            <div class="finishGameScreenTitle">GAME OVER</div>
+            <div class="finishGameScreenResult">
+                <div class="finishGameScreenResultContent"></div>
+            </div>
+            <div class="finishGameScreenRetryGame">
+                <div class="finishGameScreenRetryGameContent"><input type='button' value="RETRY GAME" onclick="retryGame()"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="main.js"></script>
+
+
+</body>
+</html>
